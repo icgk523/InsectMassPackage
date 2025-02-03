@@ -1,0 +1,75 @@
+Family,Measurement,A,B
+Scorpionida,P,1.136,3.667
+Scorpionida,Q,0.162,3.319
+Soliphuga,Q,7.327,2.5
+Araneae,P,1.232,2.375
+Araneae,Q,33.345,1.931
+Isopoda,H,0.666,3.292
+Diplopoda,H,0.91,5.573
+Chilopoda,H,1.681,3.603
+Tisanura,H,1.236,0.975
+Caelifera,M,20.436,3.056
+Blattodea,H,1.275,3.344
+Mantodea,H,0.122,4.24
+Dermaptera,H,0.345,5.379
+Dermaptera,F,0.598,2.387
+Embioptera,H,0.86,2.416
+Homoptera,H,0.534,2.715
+Heteroptera (Heavy),H,4.238,2.664
+Heteroptera (Heavy),P,0.284,2.576
+Heteroptera (Slender),H,3.86,2.618
+Heteroptera (Slender),P,0.502,2.485
+Nematocera,H,3.942,3.106
+Brachycera,H,0.655,2.526
+Lepidoptera (Larvae),H,5.532,2.129
+Lepidoptera (Larvae),M,74.084,2.308
+Ropalocera,H,1.634,2.793
+Heterocera,H,2.053,2.804
+Neuroptera,H,0.773,2.829
+Carabidae (Larvae),H,2.591,2.341
+Scarabeidae (Larvae),H,1.19,3.277
+Tenebrionidae (Larvae),H,4.796,1.701
+Carabidae,H,1.258,3.56
+Carabidae,P,0.649,3.04
+Carabidae,E,0.041,3.196
+Tenebrionidae,H,1.102,3.631
+Tenebrionidae,P,0.397,3.068
+Tenebrionidae,E,0.191,2.569
+Scarabeidae (Larvae),H,1.533,2.587
+Scarabeidae (Larvae),P,0.401,2.513
+Scarabeidae (Larvae),E,0.378,2.588
+Chrysomelidae,H,1.343,3.27
+Chrysomelidae,P,0.513,2.791
+Chrysomelidae,E,0.07,3.006
+Curculionidae,P,1.416,2.71
+Curculionidae,E,0.319,2.25
+Aphodiidae,H,1.045,2.803
+Aphodiidae,P,0.5,2.452
+Aphodiidae,E,0.078,3.111
+Cetoniidae,H,2.46,3.526
+Cetoniidae,P,0.699,2.711
+Cetoniidae,E,0.147,2.803
+Dunastidae,H,1.633,3.167
+Dunastidae,P,0.336,2.892
+Dunastidae,E,0.195,2.682
+Histeridae,H,5.62,2.284
+Histeridae,P,0.42,2.657
+Histeridae,E,0.591,2.554
+Buprestidae,H,1.035,3.727
+Buprestidae,P,0.386,3.053
+Buprestidae,E,0.031,3.105
+Cerambycidae,H,2.686,2.941
+Cerambycidae,P,1.803,2.706
+Cerambycidae,E,0.034,3.072
+Meloidae,H,1.27,3.26
+Meloidae,P,1.164,3.501
+Meloidae,E,0.003,4.589
+Staphylinidae,H,1.309,2.642
+Staphylinidae,P,0.867,2.963
+Staphylinidae,E,0.534,3.067
+Coleoptera (Others),H,2.014,2.891
+Coleoptera (Others),P,1.084,2.093
+Coleoptera (Others),E,0.15,2.244
+Hymenoptera,H,1.999,2.09
+Formicidae (workers),H,0.552,2.55
+Formicidae (winged),H,1.607,2.752
