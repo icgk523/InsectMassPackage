@@ -27,9 +27,10 @@ extract_taxonomy_info = function(tax_data, species_name) {
   genus = ifelse(any(tax_data$rank == "genus"), tax_data[tax_data$rank == "genus", "name"], NA)
   family = ifelse(any(tax_data$rank == "family"), tax_data[tax_data$rank == "family", "name"], NA)
   order = ifelse(any(tax_data$rank == "order"), tax_data[tax_data$rank == "order", "name"], NA)
-  
+  class = ifelse(any(tax_data$rank == "class"), tax_data[tax_data$rank == "class", "name"], NA)
+    
   # Return a data frame with the extracted information
-  return(data.frame(Species = species_name, Genus = genus, Family = family, Order = order, stringsAsFactors = FALSE))
+  return(data.frame(Species = species_name, Genus = genus, Family = family, Order = order, Class = class, stringsAsFactors = FALSE))
 }
 
 extract_taxonomy_info_table = function(outputs) {
@@ -46,7 +47,7 @@ extract_taxonomy_info_table = function(outputs) {
       extract_taxonomy_info(tax_data, species_name)
     } else {
       # Return a data frame with NA values if no valid data is available
-      return(data.frame(Species = names(outputs)[i], Genus = NA, Family = NA, Order = NA, stringsAsFactors = FALSE))
+      return(data.frame(Species = names(outputs)[i], Genus = NA, Family = NA, Order = NA, Class = NA, stringsAsFactors = FALSE))
     }
   }))
   
@@ -57,7 +58,7 @@ extract_taxonomy_info_table = function(outputs) {
 
 parallel_extract_otl_taxonomy = function(Data, n.cores) {
   # Check if 'Genus', 'Family', or 'Order' columns exist
-  if ("Genus" %in% colnames(Data) || "Family" %in% colnames(Data) || "Order" %in% colnames(Data)) {
+  if ("Genus" %in% colnames(Data) || "Family" %in% colnames(Data) || "Order" %in% colnames(Data) || "Class" %in% colnames(Data)) {
     
     # Get the unique species list from the data
     unique_species = unique(Data$Species)
@@ -76,6 +77,7 @@ parallel_extract_otl_taxonomy = function(Data, n.cores) {
       if (is.na(Data$Genus[i])) Data$Genus[i] = tax_info$Genus
       if (is.na(Data$Family[i])) Data$Family[i] = tax_info$Family
       if (is.na(Data$Order[i])) Data$Order[i] = tax_info$Order
+      if (is.na(Data$Class[i])) Data$Class[i] = tax_info$Class
     }
     
   } else {
